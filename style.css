@@ -1,0 +1,252 @@
+/* ===========================
+   GANESH PORTFOLIO
+   STYLE.CSS
+=========================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    scroll-behavior:smooth;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#0f0f0f;
+    color:#fff;
+    overflow-x:hidden;
+}
+
+/* Loader */
+
+#loader{
+    position:fixed;
+    width:100%;
+    height:100vh;
+    background:#0f0f0f;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    z-index:9999;
+}
+
+#loader h1{
+    color:#ff7a00;
+    font-size:55px;
+    letter-spacing:8px;
+}
+
+/* Navbar */
+
+header{
+    position:fixed;
+    width:100%;
+    top:0;
+    left:0;
+    padding:20px 8%;
+    backdrop-filter:blur(12px);
+    background:rgba(0,0,0,.35);
+    z-index:1000;
+}
+
+nav{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#ff7a00;
+}
+
+nav ul{
+    display:flex;
+    list-style:none;
+    gap:35px;
+}
+
+nav ul li a{
+    color:white;
+    text-decoration:none;
+    transition:.3s;
+}
+
+nav ul li a:hover{
+    color:#ff7a00;
+}
+
+.hire-btn{
+    background:#ff7a00;
+    color:white;
+    padding:12px 25px;
+    border-radius:40px;
+    text-decoration:none;
+    transition:.3s;
+}
+
+.hire-btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 0 20px #ff7a00;
+}
+
+/* Hero */
+
+.hero{
+    min-height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:120px 8%;
+}
+
+.hero-left{
+    width:50%;
+}
+
+.hero-left h4{
+    color:#ff7a00;
+    margin-bottom:15px;
+}
+
+.hero-left h1{
+    font-size:70px;
+    margin-bottom:15px;
+}
+
+.hero-left h2{
+    font-size:32px;
+    line-height:1.4;
+    margin-bottom:20px;
+}
+
+.hero-left span{
+    color:#ff7a00;
+}
+
+.hero-left p{
+    color:#c7c7c7;
+    max-width:550px;
+    line-height:1.8;
+}
+
+.hero-buttons{
+    margin-top:40px;
+    display:flex;
+    gap:20px;
+}
+
+.btn1,
+.btn2{
+    text-decoration:none;
+    padding:15px 35px;
+    border-radius:50px;
+    transition:.4s;
+}
+
+.btn1{
+    background:#ff7a00;
+    color:white;
+}
+
+.btn2{
+    border:2px solid #ff7a00;
+    color:#ff7a00;
+}
+
+.btn1:hover,
+.btn2:hover{
+    transform:translateY(-5px);
+    box-shadow:0 0 25px #ff7a00;
+}
+
+.social{
+    margin-top:45px;
+    display:flex;
+    gap:20px;
+}
+
+.social a{
+    width:50px;
+    height:50px;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#1b1b1b;
+    color:white;
+    text-decoration:none;
+    transition:.4s;
+}
+
+.social a:hover{
+    background:#ff7a00;
+    transform:translateY(-5px);
+}
+
+/* Right Image */
+
+.hero-right{
+    width:45%;
+    display:flex;
+    justify-content:center;
+}
+
+.image-box{
+    width:430px;
+    height:430px;
+    border-radius:30px;
+    overflow:hidden;
+    border:4px solid #ff7a00;
+    box-shadow:0 0 45px rgba(255,122,0,.45);
+}
+
+.image-box img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+/* Responsive */
+
+@media(max-width:992px){
+
+nav ul{
+display:none;
+}
+
+.hero{
+flex-direction:column-reverse;
+text-align:center;
+padding-top:150px;
+}
+
+.hero-left,
+.hero-right{
+width:100%;
+}
+
+.image-box{
+width:320px;
+height:320px;
+margin-bottom:50px;
+}
+
+.hero-left h1{
+font-size:48px;
+}
+
+.hero-left h2{
+font-size:24px;
+}
+
+.hero-buttons{
+justify-content:center;
+}
+
+.social{
+justify-content:center;
+}
+
+}
